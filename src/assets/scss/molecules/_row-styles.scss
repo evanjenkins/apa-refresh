@@ -1,0 +1,9 @@
+////////////////////////////////
+// Row styles (no copy)
+////////////////////////////////
+.row-style {
+
+  &.gray-border {
+    @include horizontal-flow-padding();
+  }
+}

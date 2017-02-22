@@ -1,0 +1,94 @@
+// Non-modular or client styles for .l-header region.
+.header.row {
+  // We should not be doing this...
+  // there was a full grid change and this
+  // caused the main navigation to not look
+  // like the d7 site that we are trying to
+  // mirror.
+  max-width: rem-calc(1178);
+
+  @media #{$medium-up} {
+    margin-bottom: rem-calc(15);
+  }
+}
+
+$small-logo-width: rem-calc(102);
+
+.header.site-branding-custom {
+  position: relative;
+
+  @media #{$small-only} {
+    height: rem-calc(75);
+    margin: 14px auto;
+    width: $small-logo-width;
+  }
+
+  @media #{$medium-up} {
+    left: rem-calc(65);
+    position: absolute;
+    top: rem-calc(22);
+    z-index: 5;
+  }
+
+  @media #{$large-up} {
+    top: rem-calc(15);
+  }
+
+  a {
+    position: absolute;
+    z-index: 2;
+
+    @media #{$medium-up} {
+      position: relative;
+    }
+  }
+
+  img {
+    width: $small-logo-width;
+
+    @media #{$large-up} {
+      width: auto;
+    }
+  }
+
+  &:after {
+    background-image: url('../img/logo-bg-sm.svg');
+    background-repeat: no-repeat;
+    bottom: rem-calc(-42);
+    content: '';
+    display: block;
+    height: rem-calc(72);
+    left: rem-calc(-23);
+    position: absolute;
+    width: rem-calc(147);
+    z-index: 1;
+
+    @media #{$medium-up} {
+      background-image: url('../img/logo-bg.svg');
+      background-size: 170px 85px;
+      bottom: auto;
+      height: rem-calc(118);
+      left: rem-calc(-33);
+      top: rem-calc(33);
+      width: rem-calc(155);
+    }
+
+    @media #{$large-up} {
+      background-size: auto;
+      height: rem-calc(118);
+      left: rem-calc(-52);
+      top: rem-calc(48);
+      width: rem-calc(265);
+    }
+  }
+}
+
+#off-canvas-show {
+
+  &.left-off-canvas-toggle:hover,
+  &.left-off-canvas-toggle:focus,
+  &.left-off-canvas-toggle:visited {
+    text-decoration: none;
+  }
+}
+

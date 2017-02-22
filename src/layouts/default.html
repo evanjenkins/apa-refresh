@@ -1,0 +1,307 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+<body>
+<section class="off-canvas-wrap" data-offcanvas>
+
+  <div class="inner-wrap">
+    <aside class="left-off-canvas-menu">
+      <div class="block-region-left-off-canvas">
+        <div class="region-layout">
+          <div class="search-block-form search-form-block" data-drupal-selector="search-block-form" role="search">
+            <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+              <div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+                <label for="edit-keys" class="visually-hidden">Search</label>
+                <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search"
+                       id="edit-keys" name="keys" value="" size="15" maxlength="128" placeholder="Search"
+                       class="form-search">
+              </div>
+              <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"
+                   id="edit-actions"><input class="success button radius js-form-submit form-submit"
+                                            data-drupal-selector="edit-submit" type="submit" id="edit-submit"
+                                            value="Search">
+              </div>
+            </form>
+          </div>
+
+          <ul class="off-canvas-list">
+            {{> menu-items }}
+          </ul>
+
+
+          <ul>
+            <li>
+              <a href="https://connect.americaspromise.org/?_ga=1.163979775.1366671337.1443629108" target="">Donate</a>
+            </li>
+            <li>
+              <a href="http://www.americaspromise.org/contact-us" target="">Contact</a>
+            </li>
+            <li>
+              <a href="http://www.americaspromise.org/join-our-email-list" target="">Email</a>
+            </li>
+            <li>
+              <a href="http://www.americaspromise.org/legal" target="">Legal</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </aside>
+
+
+    <aside class="right-off-canvas-menu">
+
+    </aside>
+
+    <header class="row collapse header">
+      <div class="large-12 columns">
+        <div class="row">
+          <a id="off-canvas-show" href="#" class="left-off-canvas-toggle show-for-small-only" data-icon="">
+            <span class="hidden">Show Navigation</span>
+          </a>
+          <div class="block-region-header">
+            <div class="region-layout">
+              <div class="header social-block">
+                <a href="https://connect.americaspromise.org/" title="Donate" class="button radius">Donate</a>
+                <a href="https://www.facebook.com/americaspromise" title="Facebook"
+                   class="social-block--facebook fa fa-facebook">Facebook</a>
+                <a href="https://twitter.com/americaspromise" title="Twitter" class="social-block--twitter fa fa-twitter">Twitter</a>
+                <a href="https://plus.google.com/u/0/104077316408517147346/posts" title="Google Plus"
+                   class="social-block--g-plus fa fa-google-plus">Google Plus</a>
+              </div>
+
+              <nav class="top-bar" data-topbar="" data-options="custom_back_text:false; scrolltop:false">
+                <ul class="title-area">
+                  <li class="toggle-topbar menu-icon">
+                    <a href="#"><span></span></a>
+                  </li>
+                </ul>
+
+                <section class="top-bar-section">
+                  <ul class="menu nav-bar main-navigation-menu">
+                    <li class="hide-in-footer has-dropdown not-click">
+                      <a href="/about" class="hide-in-footer" target="" data-drupal-link-system-path="node/63">About</a>
+                      <ul class="dropdown">
+                        <ul class="menu nav-bar">
+                          <li>
+                            <a href="/promises" target="">The Five Promises</a>
+                          </li>
+                          <li>
+                            <a href="/our-history" target="">Our History</a>
+                          </li>
+                          <li>
+                            <a href="/partners" target="">Join the Alliance</a>
+                          </li>
+                          <li>
+                            <a href="/donors" target="">Funders</a>
+                          </li>
+                          <li>
+                            <a href="http://www.firstfocus.net/" target="">Advocacy</a>
+                          </li>
+                          <li>
+                            <a href="/staff" target="">Leadership &amp; Staff</a>
+                          </li>
+                          <li>
+                            <a href="/careers" target="">Careers</a>
+                          </li>
+                          <li>
+                            <a href="/contact-us" target="">Contact Us</a>
+                          </li>
+                        </ul>
+
+                      </ul>
+                    </li>
+                    <li class="has-dropdown not-click">
+                      <a href="/news-opinion" target="" data-drupal-link-system-path="news-opinion">News</a>
+                      <ul class="dropdown">
+                        <ul class="menu nav-bar">
+                          <li>
+                            <a href="/press-releases" target="" data-drupal-link-system-path="press-releases">Press
+                              Releases</a>
+                          </li>
+                          <li>
+                            <a href="/news" target="" data-drupal-link-system-path="news">Latest News</a>
+                          </li>
+                          <li>
+                            <a href="/media-resources" target="" data-drupal-link-system-path="media-resources">Press
+                              Room</a>
+                          </li>
+                          <li>
+                            <a href="/opinions" target="" data-drupal-link-system-path="opinions">Opinions</a>
+                          </li>
+                        </ul>
+
+                      </ul>
+                    </li>
+                    <li class="has-dropdown not-click">
+                      <a href="/programs" target="">Initiatives</a>
+                      <ul class="dropdown">
+                        <li class="title back js-generated"><h5><a href="javascript:void(0)">« Initiatives</a></h5></li>
+                        <ul class="menu nav-bar">
+                          <li>
+                            <a href="/program/center-promise" target="">Center for Promise</a>
+                          </li>
+                          <li>
+                            <a href="http://gradnation.americaspromise.org" target="">GradNation</a>
+                          </li>
+                          <li>
+                            <a href="/program/gradnation-community-summits" target="">GradNation Community Summits</a>
+                          </li>
+                          <li>
+                            <a href="http://www.americaspromise.org/building-grad-nation-report" target="">Building a
+                              GradNation Report</a>
+                          </li>
+                          <li>
+                            <a href="http://gradnation.americaspromise.org/state-activation" target="">GradNation State
+                              Activation Initiative</a>
+                          </li>
+                          <li>
+                            <a href="/youth-opportunity-fund" target="">Youth Opportunity Fund</a>
+                          </li>
+                        </ul>
+
+                      </ul>
+                    </li>
+                    <li class="has-dropdown not-click">
+                      <a href="/learning-library" target="" data-drupal-link-system-path="learning-library">Resources</a>
+                      <ul class="dropdown">
+                        <li class="title back js-generated"><h5><a href="javascript:void(0)">« Resources</a></h5></li>
+                        <ul class="menu nav-bar">
+                          <li>
+                            <a href="/learning-library#/search?sources=316" target=""
+                               data-drupal-link-system-path="learning-library">Center for Promise Resources</a>
+                          </li>
+                          <li>
+                            <a href="http://gradnation.americaspromise.org/reports-resources" target="">GradNation
+                              Resources</a>
+                          </li>
+                          <li>
+                            <a href="/parent-engagement-toolkit" target="">Parent Engagement Toolkit</a>
+                          </li>
+                          <li>
+                            <a href="/volunteer" target="">Get Involved</a>
+                          </li>
+                          <li>
+                            <a href="/report/barriers-wellness" title="Voices and Views from Young People in Five Cities"
+                               data-drupal-link-system-path="node/9195">2016 Barriers to Wellness</a>
+                          </li>
+                          <li>
+                            <a
+                              href="http://www.americaspromise.org/report/closing-college-gap-roadmap-postsecondary-readiness-and-attainment"
+                              target=""
+                              title="Closing the College Gap: A Roadmap to Postsecondary Readiness and Attainment">2016
+                              Closing the College Gap</a>
+                          </li>
+                          <li>
+                            <a href="/report/2016-building-grad-nation-data-brief"
+                               title="OVERVIEW OF 2013-14 HIGH SCHOOL GRADUATION RATES"
+                               data-drupal-link-system-path="node/1676">2016 Building a Grad Nation Data Brief</a>
+                          </li>
+                          <li>
+                            <a href="/report/2016-building-grad-nation-report"
+                               title="Progress and challenge in raising high school graduation rates"
+                               data-drupal-link-system-path="node/111">2016 Building a Grad Nation Report</a>
+                          </li>
+                          <li>
+                            <a href="/report/hidden-plain-sight" target=""
+                               title="HOMELESS STUDENTS IN AMERICA’S PUBLIC SCHOOLS"
+                               data-drupal-link-system-path="node/1682">2016 Hidden in Plain Sight</a>
+                          </li>
+                          <li>
+                            <a href="/report/2015-building-grad-nation-report"
+                               title="Progress and Challenge in Ending the High School Dropout Epidemic"
+                               data-drupal-link-system-path="node/1669">2015 Building a Grad Nation Report</a>
+                          </li>
+                          <li>
+                            <a href="/report/dont-quit-me" target=""
+                               title="What Young People Who Left School Say About the Power of Relationships"
+                               data-drupal-link-system-path="node/1320">2015 Don’t Quit on Me</a>
+                          </li>
+                          <li>
+                            <a href="/report/dont-call-them-dropouts" title="Don't Call Them Dropouts"
+                               data-drupal-link-system-path="node/392">Don't Call Them Dropouts</a>
+                          </li>
+                        </ul>
+
+                      </ul>
+                    </li>
+                    <li class="has-dropdown not-click">
+                      <a href="/events" target="" data-drupal-link-system-path="events">Events</a>
+                      <ul class="dropdown">
+                        <li class="title back js-generated"><h5><a href="javascript:void(0)">« Events</a></h5></li>
+                        <ul class="menu nav-bar">
+                          <li>
+                            <a href="/event/recommit-kids-summit-americas-future"
+                               data-drupal-link-system-path="node/9219">Recommit2Kids Summit</a>
+                          </li>
+                          <li>
+                            <a href="/event/20th-anniversary-promise-night" data-drupal-link-system-path="node/9218">20th
+                              Anniversary Promise Night</a>
+                          </li>
+                        </ul>
+
+                      </ul>
+                    </li>
+                    <li class="hide-in-header">
+                      <a href="/press-room" class="hide-in-header" target="">Press Room</a>
+                    </li>
+                  </ul>
+
+                </section>
+              </nav>
+
+
+              <div class="search-block-form header search-form-block" data-drupal-selector="search-block-form-2"
+                   role="search">
+
+
+                <form action="/search/node" method="get" id="search-block-form--2" accept-charset="UTF-8">
+                  <div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+                    <label for="edit-keys--2" class="visually-hidden">Search</label>
+                    <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search"
+                           id="edit-keys--2" name="keys" value="" size="15" maxlength="128" placeholder="Search"
+                           class="form-search">
+
+                  </div>
+                  <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"
+                       id="edit-actions--2"><input class="success button radius js-form-submit form-submit"
+                                                   data-drupal-selector="edit-submit" type="submit" id="edit-submit--2"
+                                                   value="Search">
+                  </div>
+
+                </form>
+
+              </div>
+              <div class="header site-branding-custom">
+                <a href="/" title="America's Promise Alliance Home"><img
+                  src="{{root}}assets/img/logo.svg" alt="America's Promise Alliance logo"
+                  title="America's Promise Alliance Home" class="logo">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main" class="main-page-content">
+      <a id="main-content"></a>
+    </div>
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+  {{> body}}
+
+  {{> footer}}
+  </div>
+</section>
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>
+

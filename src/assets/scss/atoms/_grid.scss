@@ -1,0 +1,7 @@
+
+.columns {
+  @media #{$small-only} {
+    padding-left: $column-gutter;
+    padding-right: $column-gutter;
+  }
+}

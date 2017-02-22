@@ -1,0 +1,134 @@
+// Non-modular or client styles for .l-footer region.
+
+footer {
+  background-color: $off-canvas-bg;
+
+  > .row {
+    background-color: $off-canvas-secondary-bg;
+
+    @media #{$medium-up} {
+      padding: rem-calc(40 16 180);
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+  }
+
+  [class^="footer--column"] {
+
+    @media #{$small-only} {
+      padding: 0;
+    }
+  }
+
+  .footer--column-1,
+  .footer--column-2 {
+    ul {
+      list-style: none;
+
+      @media #{$small-only} {
+        @include off-canvas-list;
+
+        li a {
+          letter-spacing: rem-calc(3);
+          padding-left: rem-calc(50);
+        }
+      }
+
+      a {
+        font-size: $font-size-large;
+        font-weight: bold;
+
+        @media #{$medium-up} {
+          font-size: rem-calc(14);
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .footer--column-1 {
+
+    li {
+
+      @media #{$medium-up} {
+        padding: rem-calc(8 0);
+      }
+    }
+
+    a {
+      color: $white;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+  }
+
+  .footer--column-2 {
+
+    @media #{$small-only} {
+      background: $off-canvas-bg;
+    }
+
+    ul {
+
+      @media #{$medium-up} {
+        @include inline-list;
+        letter-spacing: rem-calc(1);
+        padding: rem-calc(8 0);
+
+        a {
+          &:hover {
+            border-bottom: 2px solid $tertiary-color;
+            text-decoration: none;
+          }
+        }
+      }
+
+      li {
+
+        @media #{$large-up} {
+          margin-left: rem-calc(44);
+        }
+      }
+    }
+
+    a {
+      color: $off-canvas-link-color;
+    }
+  }
+
+  .footer--column-3 {
+    background-color: $white;
+
+    @media #{$medium-up} {
+      background-color: transparent;
+      padding-left: rem-calc(0);
+      padding-right: rem-calc(0);
+    }
+
+    @media #{$large-up} {
+      padding-left: rem-calc(60);
+      padding-right: rem-calc(60);
+    }
+  }
+}
+
+.footer--copyright {
+  background-color: $white;
+  color: $footer-copyright;
+  font: 300 20px/27px "Avenir W01",sans-serif;
+  letter-spacing: rem-calc(2);
+  line-height: 27px;
+  padding-bottom: 3em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media #{$medium-up} {
+    background-color: transparent;
+    font-size: $font-size-small;
+    margin-top: 20px;
+    padding-right: rem-calc(90);
+    text-align: right;
+  }
+}

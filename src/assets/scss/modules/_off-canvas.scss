@@ -1,0 +1,108 @@
+// Off canvas theme.
+.left-off-canvas-menu,
+.right-off-canvas-menu {
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+
+.left-off-canvas-menu {
+
+  .search-block-form,
+  .off-canvas-list li a {
+    background-color: $off-canvas-secondary-bg;
+  }
+
+  form {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .block-region-left-off-canvas {
+    > div ul:last-child {
+      li {
+        a {
+          border-bottom: 1px solid $off-canvas-secondary-bottom-border;
+        }
+      }
+    }
+  }
+  //.block-offcanvassecondary ul li {
+  //  a {
+  //    border-bottom: 1px solid $off-canvas-secondary-bottom-border;
+  //  }
+  //}
+}
+
+.left-off-canvas-toggle {
+  color: $aluminum;
+  font-size: rem-calc(32);
+  left: rem-calc(28);
+  position: absolute;
+  top: rem-calc(29);
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $aluminum;
+  }
+}
+
+.off-canvas-list {
+
+  li {
+    padding: 0;
+  }
+
+  .left-off-canvas-menu & {
+    a {
+      padding-bottom: rem-calc(16);
+      padding-top: rem-calc(16);
+    }
+  }
+
+  a {
+    font-size: $font-size-medium;
+    font-weight: bold;
+    letter-spacing: rem-calc(3);
+    text-transform: uppercase;
+  }
+
+  .has-submenu {
+
+    &.showing-toggle {
+      .showing-toggle {
+        background-color: $off-canvas-bg;
+        border-bottom: 0 none;
+        color: $white;
+      }
+    }
+
+    > a::after {
+      display: none;
+      visibility: hidden;
+    }
+
+    > ul {
+      display: none;
+      margin: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .showing-toggle-nav {
+      a {
+        background-color: $off-canvas-submenu-item-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+.offcanvas-overlap-right .exit-off-canvas {
+  background: transparent;
+}

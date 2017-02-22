@@ -1,0 +1,55 @@
+.solution-form {
+  padding-top: rem-calc(20);
+
+  @media #{$medium-up} {
+    padding-top: rem-calc(40);
+  }
+
+  > .row {
+    position: relative;
+
+    .solution-form--image {
+      left: 0;
+      bottom: 0px;
+      position: absolute;
+    }
+  }
+
+  h5,
+  h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media (max-width: 1100px) and (min-width: 1041px){
+      font-size: rem-calc(18);
+    }
+  }
+
+  p {
+    @media (max-width: 1100px) and (min-width: 1041px){
+      font-size: rem-calc(14);
+    }
+  }
+
+  label {
+    color: $secondary-color;
+    display: inline-block;
+    width: 25%;
+  }
+
+  input {
+    display: inline-block;
+    padding: rem-calc(6);
+    width: 70%;
+  }
+
+  .form-item {
+    margin-bottom: rem-calc(10);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+}
+

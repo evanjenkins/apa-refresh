@@ -1,0 +1,169 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+// Example parametrics.
+// ------------------------------------------------------
+// %font-FONTNAME   {}
+// %font-sans-serif { font-family: sans-serif; }
+// %font-serif      { font-family: serif; }
+$flow: rem-calc(10);
+
+%horizontal-flow {
+  margin-bottom: $flow;
+  padding-bottom: $flow;
+
+  @media #{$medium-up} {
+    margin-bottom: $flow * 2;
+    padding-bottom: $flow * 2;
+  }
+}
+
+
+@mixin horizontal-flow($size: $flow) {
+  margin-bottom: $size;
+  padding-bottom: $size;
+
+  @media #{$medium-up} {
+    margin-bottom: $size * 2;
+    padding-bottom: $size * 2;
+  }
+}
+
+@mixin horizontal-flow-margin($small-sc: 40, $medium-sc: 40) {
+  margin-bottom: rem-calc($small-sc);
+  margin-top: rem-calc($small-sc);
+
+  @media #{$medium-up} {
+    margin-bottom: rem-calc($medium-sc);
+    margin-top: rem-calc($medium-sc);
+  }
+}
+
+@mixin horizontal-flow-padding($small-sc: 30, $medium-sc: 50) {
+  padding-bottom: rem-calc($small-sc);
+  padding-top: rem-calc($small-sc - 10);
+
+  @media #{$medium-up} {
+    padding-bottom: rem-calc($medium-sc);
+    padding-top: rem-calc($medium-sc - 10);
+  }
+
+}
+
+%horizontal-flow-margin-large {
+  @include horizontal-flow-margin();
+}
+
+%horizontal-flow-padding {
+  padding-bottom: $flow;
+  padding-top: $flow;
+
+  @media #{$medium-up} {
+    padding-bottom: $flow * 2;
+    padding-top: $flow * 2;
+  }
+}
+
+%horizontal-flow-large {
+  margin-bottom: $flow * 2;
+  margin-top: $flow * 2;
+
+  @media #{$medium-up} {
+    margin-bottom: $flow * 4;
+    margin-top: $flow * 4;
+  }
+}
+
+.subheader {
+  @extend .subheader;
+  font-family: $subheader-font-family;
+
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+.subheader-primary {
+  color: $primary-color;
+}
+
+.subheader-primary-extend {
+  @extend .subheader;
+  @extend .subheader-primary;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.strong-title {
+  font-weight: bold;
+
+  a {
+    color: $body-font-color;
+
+    &[target="_blank"] {
+
+      &:after {
+        content: '\f08e';
+        font-family: $fontawesome;
+        margin-left: rem-calc(5);
+      }
+    }
+  }
+}
+
+p.lead {
+  font-size: $paragraph-font-size + rem-calc(6);
+  line-height: 1.2;
+}
+
+blockquote {
+
+  .text-align-right {
+
+    @media #{$small-only} {
+      text-align: center;
+    }
+  }
+
+  footer {
+    background: transparent;
+    color: $body-font-color;
+  }
+}
+
+
+body:not(.purl-provider_key-microsites) {
+
+  blockquote {
+    border-color: $secondary-color;
+    border-style: solid;
+    border-width: 1px 0;
+    font-size: $font-size-medium;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.5;
+    padding: $blockquote-padding;
+    position: relative;
+
+    @media #{$medium-up} {
+      padding: rem-calc(20 65);
+    }
+
+    p {
+      display: inline-block;
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+
+    &:before {
+      //@include global-sprite(opening-quote);
+      content: '';
+      //height: global-sprite-height(opening-quote);
+      left: 0;
+      position: absolute;
+      top: rem-calc(20);
+      //width: global-sprite-width(opening-quote);
+    }
+  }
+}

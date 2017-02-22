@@ -1,0 +1,67 @@
+// @file
+//  This file is a custom file that loads all files. Each non-base layer
+//  can be disabled.
+//
+//  Theme styles are categorized using SMACSS standards. They utilize
+//  categorization of styles into various categories. Those categories are the
+//  following:
+//
+//  - Base: CSS reset/normalize plus HTML element styling.
+//  - Layout: Macro arrangement of a web page, including any grid systems.
+//  - Modules: Dictate minor layout modules or reusable elements.
+//  - States: Describe the appearance of a module in various states.
+//  - Theme: Specific customizations for your subtheme.
+//  For more information about this new Drupal css file standard, please review
+//  the following:
+//  - https://drupal.org/node/1887922
+//  - http://smacss.com/
+
+// Make sure the charset is set appropriately
+@charset 'UTF-8';
+
+// Utilities
+//@import 'compass/utilities/sprites';
+//@import 'compass/css3/images';
+
+// Sprites
+//@import 'base/sprites';
+
+// Core
+// The following imports bootstrap the theme.
+// You may comment out bourbon if you don't want to use its library of mixins.
+// The theme will have compilation errors if Foundation is not imported.
+//@import 'base/fonts';
+//@import 'base/mixins';
+
+// Global Zurb Foundation variable overrides.
+@import 'settings';
+
+// Comment out this import if you don't want to use normalize.
+@import 'normalize';
+
+// Comment out the imports you don't need below.
+@import 'foundation';
+@import 'font-awesome';
+@import 'flexslider';
+
+@import 'mixins';
+@import 'helpers';
+@import 'fonts';
+
+// Custom
+@import 'base/common';
+@import 'base/elements';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'modules/footer-address';
+@import 'modules/off-canvas';
+@import 'modules/block';
+@import 'modules/topbar';
+
+@import 'atoms/*';
+
+@import 'molecules/*';
+
+@import 'organisms/*';

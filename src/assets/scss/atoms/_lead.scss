@@ -1,0 +1,11 @@
+//////////////////////////
+// Paragraphs leads
+/////////////////////////
+p.lead {
+  font-size: rem-calc(18);
+  line-height: 1.5;
+
+  @media #{$medium-up} {
+    font-weight: 500;
+  }
+}

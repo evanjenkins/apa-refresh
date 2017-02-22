@@ -1,0 +1,148 @@
+//////////////////////////
+// Flexslider
+//////////////////////////
+.small-12.homepage-orbit {
+
+  @media #{$small-only} {
+    padding: 0;
+  }
+}
+
+.flexslider {
+  border: 0 none;
+  margin: 0 auto;
+
+  .flex-viewport {
+    overflow: visible !important;
+  }
+
+  .text {
+    padding: $column-gutter;
+
+    @media #{$medium-up} {
+      padding: $column-gutter;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .button {
+    display: block;
+    text-transform: uppercase;
+
+    @media #{$medium-up} {
+      float: right;
+    }
+  }
+
+  .flex-control-nav {
+    @include center('x');
+    bottom: rem-calc(-20);
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: auto;
+
+    @media #{$medium-up} {
+      bottom: 0;
+    }
+
+    @media #{$large-up} {
+      bottom: auto;
+      left: rem-calc(16);
+      top: 68%;
+      transform: translateX(0);
+    }
+
+    @media #{$xlarge-up} {
+      top: rem-calc(450);
+    }
+
+    li {
+      margin: rem-calc(0 5);
+      padding: 0;
+    }
+
+    .flex-active {
+      background-color: $primary-color;
+    }
+  }
+
+  .slide-title {
+    font-weight: 400;
+
+    a:hover {
+      color: darken($primary-color, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+.flex-direction-nav {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media #{$medium-up} {
+    display: block;
+  }
+
+  a {
+    //background-color: $monsoon;
+    //border-radius: $global-rounded;
+    height: rem-calc(34);
+    top: 15%;
+    width: rem-calc(36);
+
+    @media #{$medium-up} {
+      top: 35%;
+    }
+
+    &:before,
+    &:after {
+      color: $white;
+      display: inline-block;
+      font-family: 'icomoon';
+      font-size: 30px;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  a.flex-prev {
+    @extend %icon-leftarrow;
+
+    &:before {
+      left: 3px;
+    }
+  }
+
+  a.flex-next {
+    @extend %icon-rightarrow;
+
+    &:before {
+      right: 3px;
+    }
+  }
+}
+
+.slides {
+
+  .image {
+    opacity: 0.3;
+  }
+
+  .text {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  .flex-active-slide {
+
+    .text,
+    .image {
+      opacity: 1;
+    }
+  }
+}

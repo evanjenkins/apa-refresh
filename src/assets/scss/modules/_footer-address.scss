@@ -1,0 +1,41 @@
+// Footer address block theme.
+
+.site-address-block {
+  margin: rem-calc(40 0);
+  text-align: center;
+
+  @media #{$medium-up} {
+    margin: rem-calc(20 0);
+    text-align: left;
+  }
+
+  .site-name--footer {
+    color: $off-canvas-secondary-bg;
+    font: 400 rem-calc(25) "BT Serifa W01", serif;
+    letter-spacing: rem-calc(2);
+    text-transform: uppercase;
+
+    @media #{$small-only} {
+      margin-bottom: rem-calc(20);
+      padding: rem-calc(0 20);
+    }
+
+    @media #{$medium-up} {
+      color: $white;
+      font: 800 rem-calc(14) "Avenir W01", sans-serif;
+    }
+  }
+
+  address,
+  span {
+    color: $off-canvas-link-color;
+    display: block;
+    font: 200 25px/35px "Avenir W01",sans-serif;
+    font-style: normal;
+
+    @media #{$medium-up} {
+      font-size: rem-calc(14);
+      line-height: 1.5;
+    }
+  }
+}

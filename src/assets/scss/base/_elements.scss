@@ -1,0 +1,494 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+// Headings
+//------------------------------------------
+// h1, h2, h3,
+// h4, h5, h6 {}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  a {
+    color: $primary-color;
+  }
+
+  &.subheader a {
+    color: $secondary-color;
+  }
+
+  &.tertiary-head {
+    color: $dark-gray;
+    font-family: $body-font-family;
+  }
+}
+
+h1 {
+  line-height: $h1-line-height;
+}
+
+h2 {
+  font-weight: 300;
+  line-height: $h2-line-height;
+  //margin-bottom: rem-calc(18);
+}
+
+h3 {
+  line-height: $h3-line-height;
+}
+
+h4 {
+  //line-height: $h4-line-height;
+
+  &.border-bottom {
+    margin-bottom: rem-calc(25);
+    padding-bottom: rem-calc(14);
+  }
+}
+
+ul {
+  list-style: disc outside;
+  margin-left: rem-calc(30);
+
+  li ul {
+    list-style: square outside;
+    margin-left: rem-calc(30);
+
+    ul {
+      list-style: circle outside;
+      margin-left: rem-calc(30);
+    }
+  }
+}
+
+ol {
+  list-style-position: outside;
+  margin-left: rem-calc(30);
+
+  li ol {
+    list-style: lower-alpha outside;
+    margin-left: rem-calc(30);
+
+    ol {
+      list-style: lower-roman outside;
+      margin-left: rem-calc(30);
+    }
+  }
+}
+
+li {
+  padding-left: rem-calc(6);
+  padding-top: rem-calc(8);
+}
+
+a:not(.button) {
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+.border-bottom--light {
+  border-color: $aluminum;
+}
+
+.bottom-bordered--small-bottom-margin {
+  margin-bottom: rem-calc(20);
+}
+
+.sidebar-heading {
+  color: $primary-color;
+  font-size: rem-calc(20);
+  font-weight: 500;
+  margin-bottom: rem-calc(15);
+  padding-bottom: rem-calc(8);
+
+  &:before {
+    font-family: $fontawesome;
+    margin-right: rem-calc(10);
+  }
+}
+
+
+$sidebar-icons: (
+        location: '\f279',
+        orgs: '\f1ad',
+        contact: '\f279',
+        twitter: '\f099',
+        date: '\f073'
+);
+
+@each $type, $content in $sidebar-icons {
+  .sidebar-heading--#{$type} {
+
+    &:before {
+      content: $content;
+    }
+  }
+}
+
+
+h5 {
+  font-weight: bold;
+  line-height: $h5-line-height;
+}
+
+h4,
+h5,
+h6 {
+  font-family: $body-font-family;
+}
+
+h6 {
+  font-weight: bold;
+
+  &.subheader {
+    font-weight: bold;
+  }
+}
+
+.error {
+  color: $alert-color;
+}
+
+
+// Images
+//-----------------------------------------------------------------------------
+img {
+  //width: 100%;
+  &.align-center,
+  &.align-left,
+  &.align-right {
+    padding: rem-calc(16);
+  }
+
+  &.align-left {
+    padding-left: 0;
+  }
+
+  &.align-right {
+    padding-right: 0;
+  }
+}
+
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  border-radius: $global-radius;
+  border: 1px solid $input-border-color;
+}
+
+
+.intro-sentence {
+  color: $secondary-color;
+  font-size: rem-calc(20);
+  text-transform: uppercase;
+}
+
+
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+
+// }
+
+// select {}
+
+p.testimonial-paragraph {
+  @media #{$medium-up} {
+    padding-left: rem-calc(20);
+  }
+
+  &.testimonial {
+    font-size: $font-size-large;
+    line-height: 1.17;
+  }
+
+  &.testimonial-attribution {
+    font-size: $font-size-medium;
+    text-transform: uppercase;
+  }
+}
+
+// Not good. Designs
+// call for different p sizes
+// on random node types.
+%p-report {
+  font-size: $font-size-medium;
+  line-height: rem-calc(27);
+
+  .align-left {
+    padding-right: rem-calc(20);
+  }
+
+  .align-right {
+    padding-left: rem-calc(20);
+  }
+
+  .align-center {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+  }
+}
+
+.p-small,
+.p-small p {
+  font-size: rem-calc(16);
+  line-height: 1.4;
+  margin-bottom: $paragraph-margin-bottom / 2;
+}
+
+.p-xsmall,
+.p-xsmall p {
+  font-size: rem-calc(14);
+  line-height: 1.4;
+  margin-bottom: $paragraph-margin-bottom / 2;
+}
+
+.p-report {
+
+  h4 {
+    margin-bottom: rem-calc(10);
+  }
+
+  p,
+  ul {
+    @extend %p-report;
+  }
+
+  ul {
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > .paragraph {
+    @extend %horizontal-flow-margin-large;
+  }
+}
+
+
+.quick-foundation-layout {
+  margin-bottom: rem-calc(10);
+
+  > div:first-child {
+    margin-bottom: rem-calc(30);
+
+    @media #{$medium-up} {
+      margin-bottom: 0;
+    }
+  }
+
+  .top-left,
+  .top-right {
+    margin-bottom: rem-calc(30);
+
+    @media #{$medium-up} {
+      min-height: calc(50% - 15px);
+    }
+  }
+
+  .bottom-right {
+    @media #{$medium-up} {
+      min-height: calc(50% - 15px);
+    }
+
+    > div {
+      display: block;
+      margin-bottom: rem-calc(30);
+
+      //@media #{$small-only} {
+      //  img {
+      //    margin: 0 auto;
+      //  }
+      //}
+
+      @media #{$medium-up} {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.foundation-modal--link {
+  color: $body-font-color;
+  font-size: rem-calc(14);
+  font-weight: 900;
+
+  i {
+    font-size: rem-calc(38);
+    margin-bottom: rem-calc(2);
+    margin-right: rem-calc(10);
+    vertical-align: middle;
+  }
+}
+
+.link-label {
+  display: inline-block;
+  margin-bottom: rem-calc(20);
+  margin-right: rem-calc(30);
+  max-width: 100%;
+
+  a {
+    @include label(
+                    10px 15px,
+                    18px,
+                    $secondary-light,
+                    $global-radius
+    );
+
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+%block-title {
+  font-family: $body-font-family;
+  font-size: rem-calc(26);
+  margin-bottom: rem-calc(25);
+  text-transform: uppercase;
+}
+
+
+.block-title {
+  @extend %block-title;
+
+  em {
+    color: $body-font-color;
+    font-size: $font-size-medium;
+    font-style: normal;
+    text-transform: none;
+
+    @media #{$small-only} {
+      display: block;
+    }
+  }
+}
+
+%more-link {
+  color: $secondary-color;
+  font-weight: bold;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &:after {
+    content: '\f054';
+    font-family: $fontawesome;
+    font-weight: bold;
+    margin-left: rem-calc(5);
+    vertical-align: middle;
+  }
+}
+
+%border-bottom {
+  border-bottom: 1px solid $separator-color;
+}
+
+%bottom-bordered {
+  @extend %border-bottom;
+  padding-bottom: rem-calc(40);
+}
+
+%bottom-bordered-small {
+  @extend %border-bottom;
+  padding-bottom: rem-calc(20);
+}
+
+.bottom-bordered {
+
+  &:after {
+    @extend %bottom-bordered;
+    content: '';
+    display: block;
+    flex: 0 0 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.bottom-bordered-blocks {
+
+  .block-content {
+
+    .field-block-content--field-paragraph .field-item {
+      @extend %bottom-bordered;
+    }
+
+    .field-paragraph--field-body {
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.button--full-width {
+  margin-top: rem-calc(20);
+
+  a {
+    @include button($button-sml, $primary-color, true, true, false);
+    font-size: rem-calc(16);
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.serif {
+  font-family: $font-family-serif;
+}
