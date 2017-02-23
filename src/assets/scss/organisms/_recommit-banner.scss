@@ -6,5 +6,9 @@
 
   p {
     color: $white;
+
+    @media #{$large-up} {
+      font-size: rem-calc(24);
+    }
   }
 }

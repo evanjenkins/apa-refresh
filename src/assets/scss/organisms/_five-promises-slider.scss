@@ -300,6 +300,7 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
 
   a.flex-next,
   a.flex-prev {
+    opacity: 1;
     top: rem-calc(135);
 
     @media #{$large-up} {

@@ -1,4 +1,6 @@
 .solution-form {
+  border-bottom: 1px solid $gainsboro;
+  background-color: $silver;
   padding-top: rem-calc(20);
 
   @media #{$medium-up} {

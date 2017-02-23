@@ -1,0 +1,60 @@
+///////////////////////////
+// GradNation Section
+//////////////////////////
+
+.gradnation-section {
+  text-align: center;
+  
+  @media #{$medium-up} {
+    text-align: left;
+  }
+
+  > .row {
+    border-bottom: 1px solid $silver;
+  }
+
+  .stat-description {
+    font-size: rem-calc(20);
+
+    @media #{$large-up} {
+      display: inline-block;
+      padding-left: rem-calc(20);
+    }
+  }
+
+  .stat-large {
+    font-size: rem-calc(64);
+
+    @media #{$large-up} {
+      display: inline-block;
+    }
+  }
+
+  .lead {
+    color: $secondary-color;
+    font-weight: 200;
+
+    @media #{$large-up} {
+      font-size: rem-calc(26);
+    }
+  }
+}
+
+.gradnation-section--logo {
+  max-width: rem-calc(350);
+  margin-bottom: rem-calc(20);
+}
+
+.gradnation-section--map-placeholder {
+
+  @media #{$large-up} {
+    max-width: rem-calc(450);
+  }
+}
+
+.gradnation-section--stats {
+
+  @media #{$large-up} {
+    display: flex;
+  }
+}

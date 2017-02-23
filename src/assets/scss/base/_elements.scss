@@ -492,3 +492,20 @@ p.testimonial-paragraph {
 .serif {
   font-family: $font-family-serif;
 }
+
+.post-date {
+  margin-top: rem-calc(5);
+  margin-bottom: rem-calc(5);
+
+  @media #{$medium-up} {
+    margin-top: 0;
+  }
+}
+
+.more-link {
+
+  a {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+}

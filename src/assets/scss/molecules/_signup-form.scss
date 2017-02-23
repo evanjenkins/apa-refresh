@@ -1,0 +1,31 @@
+//////////////////////////////
+// Signup form (no copy)
+//////////////////////////////
+.signup-form--form {
+  clear: both;
+  display: flex;
+
+  @media #{$medium-up} {
+    flex-wrap: nowrap;
+  }
+
+  input {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-right: rem-calc(20);
+  }
+
+  .button {
+    flex: 0 0 40%;
+    margin-bottom: 0;
+  }
+}
+
+.signup-form {
+
+  input {
+    border: 1px solid #ab99d0;
+    padding: rem-calc(9);
+  }
+}
+

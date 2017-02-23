@@ -1,0 +1,133 @@
+/////////////////////////////
+// Twitter statuses
+/////////////////////////////
+
+.twitter-text-link {
+  display: none;
+}
+
+.twitter-status {
+  max-width: 100%;
+
+  > div {
+    box-shadow: 0 1px 2px rgba(34, 25, 25, .4);
+    padding: rem-calc(15);
+    position: relative;
+
+    @media #{$medium-up} {
+      padding: rem-calc(15 15 30);
+      //flex: 0 0 calc(50% - .5em);
+      //min-width: calc(50% - .5em);
+
+      &:before {
+        border-color: transparent transparent darken($twitter-color, 20%);
+        border-style: solid;
+        border-width: 0 0 8px 8px;
+        content: '';
+        display: block;
+        height: 0;
+        position: absolute;
+        right: 40px;
+        top: -7px;
+        width: 0;
+      }
+
+      &:after {
+        background-color: $twitter-color;
+        color: $white;
+        content: '\f099';
+        display: block;
+        font-family: $fontawesome;
+        font-size: rem-calc(20);
+        height: rem-calc(35);
+        padding-top: rem-calc(5);
+        position: absolute;
+        right: rem-calc(10);
+        text-align: center;
+        top: rem-calc(-7);
+        width: rem-calc(30);
+      }
+    }
+  }
+}
+
+.twitter-status--intents {
+  right: 15px;
+  width: calc(100% - 30px);
+}
+
+.twitter-status {
+  font-size: rem-calc(14);
+  margin-bottom: rem-calc(15);
+  position: relative;
+}
+
+.twitter-status--user {
+  margin-bottom: rem-calc(5);
+
+  img {
+    vertical-align: top;
+  }
+}
+
+.twitter-status--user--name-wrapper {
+  display: inline-block;
+  margin-left: rem-calc(5);
+
+  a {
+    display: block;
+  }
+}
+
+.twitter-status--user--name {
+  color: $twitter-color;
+  font-weight: bold;
+}
+
+.twitter-status--user--handle {
+  color: $aluminum;
+}
+
+.twitter-status--text {
+  padding-bottom: rem-calc(10);
+
+  a {
+    color: $twitter-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
+.twitter-status--user--verified {
+  //@include global-sprite(twitter-verified);
+  display: inline-block;
+  height: rem-calc(23);
+  margin-left: rem-calc(5);
+  vertical-align: middle;
+  width: rem-calc(23);
+}
+
+.twitter-status--intents {
+  border-top: 1px solid $aluminum;
+  bottom: 10px;
+  padding-top: rem-calc(3);
+  //position: absolute;
+  right: 0;
+  text-align: right;
+  width: 100%;
+
+  a {
+    color: $aluminum;
+    margin-left: rem-calc(5);
+  }
+}
+
+.twitter-text-link {
+  @extend %more-link;
+  color: $secondary-color;
+  display: block;
+  text-align: right;
+}

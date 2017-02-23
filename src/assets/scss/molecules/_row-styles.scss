@@ -2,8 +2,63 @@
 // Row styles (no copy)
 ////////////////////////////////
 .row-style {
+  @include horizontal-flow-padding();
+}
+
+.row-style {
 
   &.gray-border {
     @include horizontal-flow-padding();
+
+    background-color: $gray-bordered-bg;
+    border-bottom: 1px solid $gray-bordered-border;
+    border-top: 1px solid $gray-bordered-border;
+
+    .lead {
+      color: $secondary-color;
+      font-size: $font-size-medium;
+    }
+
+    //h1,
+    //h2,
+    //h3,
+    //h4,
+    //h5,
+    //h6 {
+    //color: $secondary-color;
+    //}
+
+    //.button {
+    //  background-color: $secondary-color;
+    //}
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  &.no-top-margin {
+    margin-top: 0;
+  }
+
+  .field-wrapper:not(.field-paragraph--field-newsletter-signup-body) {
+
+    .row:last-child {
+
+      > .columns:last-child {
+
+        hr {
+          margin-bottom: 0;
+        }
+
+        p:last-child {
+          margin-bottom: 0;
+
+          a {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 }

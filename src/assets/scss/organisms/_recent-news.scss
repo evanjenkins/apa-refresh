@@ -1,0 +1,32 @@
+///////////////////////
+// Recent news home
+//////////////////////
+.recent-news {
+
+  > .row > .columns:first-child {
+    margin-bottom: rem-calc(40);
+  }
+}
+
+.recent-news--view {
+  @media #{$large-up} {
+    padding-right: rem-calc(20);
+  }
+
+  > .row.collapse {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.recent-news--twitter  {
+
+  @media #{$large-up} {
+    .recent-news--twitter-items {
+      border-left: 3px solid $tertiary-color;
+    }
+
+    > .row {
+      padding-left: rem-calc(40);
+    }
+  }
+}
