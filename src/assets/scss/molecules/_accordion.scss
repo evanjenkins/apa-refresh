@@ -1,0 +1,70 @@
+//////////////////////
+// Accordion styles
+//////////////////////
+.accordion-header {
+
+  p {
+    color: $secondary-color;
+    font-size: $accordion-navigation-font-size;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: $accordion-content-padding $accordion-content-padding * 1.5;
+    margin-bottom: 0;
+  }
+}
+
+.accordion {
+
+  a {
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .2s ease;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    i {
+      @include center('y');
+      right: 20px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  .accordion-navigation {
+
+    &.active {
+
+      i:before {
+        content: '\f068';
+      }
+    }
+
+    > .content {
+      padding: 0;
+    }
+  }
+
+  .content {
+
+    a {
+      color: $white;
+      display: block;
+      font-size: $accordion-navigation-font-size;
+      padding: $accordion-content-padding * 1.5;
+
+      &:hover {
+        background-color: lighten($tertiary-color, 10%);
+      }
+    }
+  }
+}

@@ -1,4 +1,9 @@
-$(document).foundation();
+$(document).foundation({
+  accordion: {
+    // allow multiple accordion panels to be active at the same time
+    multi_expand: true
+  }
+});
 
 (function($) {
 

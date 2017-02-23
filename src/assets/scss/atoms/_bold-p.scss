@@ -1,0 +1,13 @@
+///////////////////
+// Bold p styles
+//////////////////
+
+%bold-paragraph {
+  font-size: $accordion-navigation-font-size;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bold-paragraph {
+  @extend %bold-paragraph;
+}

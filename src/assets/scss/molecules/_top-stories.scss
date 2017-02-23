@@ -1,0 +1,59 @@
+/////////////////////////
+// Top stories
+////////////////////////
+.search-form--popular {
+
+  hr {
+    margin-top: rem-calc(30);
+  }
+}
+
+.search-form--popular--items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+
+  li {
+    display: flex;
+    flex: 0 0 100%;
+    margin-bottom: rem-calc(20);
+    padding: 0;
+
+    @media #{$large-up} {
+      flex: 0 0 32%;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .card {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    @media #{$large-up} {
+      display: block;
+    }
+  }
+
+  .card-image {
+    flex: 0 0 120px;
+
+    @media #{$large-up} {
+      flex: 0 0 100%;
+    }
+  }
+
+  .card-content {
+    padding-bottom: rem-calc(40);
+  }
+
+  p {
+    bottom: rem-calc(20);
+    font-size: rem-calc(16);
+    margin-bottom: 0;
+    position: absolute;
+  }
+}
+

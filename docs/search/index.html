@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="../assets/css/app.css">
 </head>
 <body>
 <section class="off-canvas-wrap" data-offcanvas>
@@ -425,7 +425,7 @@
               </div>
               <div class="header site-branding-custom">
                 <a href="/" title="America's Promise Alliance Home"><img
-                  src="assets/img/logo.svg" alt="America's Promise Alliance logo"
+                  src="../assets/img/logo.svg" alt="America's Promise Alliance logo"
                   title="America's Promise Alliance Home" class="logo">
                 </a>
               </div>
@@ -437,390 +437,232 @@
     <div id="main" class="main-page-content">
       <a id="main-content"></a>
     </div>
-  <!-- Hero slider -->
-  <div class="row">
-    <div class="small-12 columns homepage-orbit">
-      <!-- Place somewhere in the <body> of your page -->
-      <div class="flexslider">
-        <ul class="slides">
+  <!-- Styles from http://www.americaspromise.org/partners -->
+  <div class="row search-form" style="margin-top: 5.55556rem;">
+    <div class="small-12 medium-3 large-3 columns show-for-medium-up search-form--filter">
+      <div class="accordion-header">
+        <p>Filter by</p>
+      </div>
+      <ul class="accordion" data-accordion role="tablist">
+        <li class="accordion-navigation">
+          <a href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">
+            Content Type
+            <i class="fa fa-plus"></i>
+          </a>
+          <div id="panel1d" class="content" role="tabpanel" aria-labelledby="panel1d-heading">
+            <ul>
+              <li><a href="#">News (25)</a></li>
+              <li><a href="#">Opinion (123)</a></li>
+              <li><a href="#">Press Release (84)</a></li>
+              <li><a href="#">Report (4)</a></li>
+              <li><a href="#">Resource (12)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel2d" role="tab" id="panel2d-heading" aria-controls="panel2d">
+            Popular Topics
+            <i class="fa fa-plus"></i>
+          </a>
+          <div id="panel2d" class="content" role="tabpanel" aria-labelledby="panel2d-heading">
+            <ul>
+              <li><a href="#">College & Career (25)</a></li>
+              <li><a href="#">Health & Wellness (123)</a></li>
+              <li><a href="#">Expanded Learning Time (84)</a></li>
+              <li><a href="#">Family Engagement (4)</a></li>
+              <li><a href="#">Youth Involvement (12)</a></li>
+              <li><a href="#">Thriving (2)</a></li>
+              <li><a href="#">Mentoring (1)</a></li>
+              <li><a href="#">Social and Emotional Learning (13)</a></li>
+              <li><a href="#">Attendance (12)</a></li>
+              <li><a href="#">Re-engaging Youth (4)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel3d" role="tab" id="panel3d-heading" aria-controls="panel3d">
+            The 5 Promises
+            <i class="fa fa-plus"></i>
+          </a>
+          <div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading">
+            <ul>
+              <li><a href="#">A Healthy Start (19)</a></li>
+              <li><a href="#">Caring Adults (11)</a></li>
+              <li><a href="#">Effective Education (2)</a></li>
+              <li><a href="#">Opportunities to Help Others (10)</a></li>
+              <li><a href="#">Safe Places (0)</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="small-12 medium-9 large-9 columns search-form--results">
+      <h2>Showing 143 results for <em>"Caring"</em></h2>
+      <div class="search-form--search-box">
+        <label aria-label="#search-form-box">Search keywords</label>
+        <input type="text" id="search-form-box" placeholder="Enter search keywords" value="caring" />
+      </div>
+      <div class="search-form--popular">
+        <!-- Google top stories -->
+        <p class="bold-paragraph">Top Stories</p>
+        <ul class="search-form--popular--items">
           <li>
-            <div class="image">
-              <img src="assets/img/slider-2.jpg" />
-            </div>
-            <div class="text row">
-              <div class="small-12 medium-9 columns">
-                <h2 class="slide-title">
-                  <a href="#">Who's Minding the Neighborhood?</a>
-                </h2>
-                <p>A new brief from the Center for Promise explores whether increasing the number of adults in a community results in more young people on a positive path to adult success.</p>
+            <div class="card">
+              <div class="card-image">
+                <img data-interchange="[http://unsplash.it/120/?image=1048, (medium)], [http://unsplash.it/300/150/?image=1048, (large)]" />
               </div>
-              <div class="small-12 medium-3 columns">
-                <a href="#" class="button radius small">Learn More <i class="fa fa-arrow-right"></i></a>
+              <div class="card-content">
+                <h6 class="subheader"><a href="#">The Most Important Gift My Mentor Gave Me</a></h6>
+                <p>created: January 26, 2017</p>
               </div>
             </div>
           </li>
           <li>
-            <div class="image">
-              <img src="assets/img/slider-3.jpg" />
-            </div>
-            <div class="text row">
-              <div class="small-12 medium-9 columns">
-                <h2 class="slide-title">
-                  <a href="#">Voices and Views from Young People in Five Cities</a>
-                </h2>
-                <p>New Center for Promise research taps into young people’s perspectives on the biggest barriers to wellness in their communities.</p>
+            <div class="card">
+              <div class="card-image">
+                <img data-interchange="[http://unsplash.it/120/?image=1038, (medium)], [http://unsplash.it/300/150/?image=1038, (large)]" />
               </div>
-              <div class="small-12 medium-3 columns">
-                <a href="#" class="button radius small">Learn More <i class="fa fa-arrow-right"></i></a>
+              <div class="card-content">
+                <h6 class="subheader"><a href="#">What’s Working: In Colorado, A Simple Approach Helps Homeless Students Succeed in College</a></h6>
+                <p>created: January 20, 2017</p>
               </div>
             </div>
           </li>
           <li>
-            <div class="image">
-              <img src="assets/img/slider-4.jpg" />
-            </div>
-            <div class="text row">
-              <div class="small-12 medium-9 columns">
-                <h2 class="slide-title">
-                  <a href="#">Closing the College Gap</a>
-                </h2>
-                <p>A roadmap to Postsecondary Rediness and Attainment</p>
+            <div class="card">
+              <div class="card-image">
+                <img data-interchange="[http://unsplash.it/120/?image=1045, (medium)], [http://unsplash.it/300/150/?image=1045, (large)]" />
               </div>
-              <div class="small-12 medium-3 columns">
-                <a href="#" class="button radius small">Learn More <i class="fa fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="image">
-              <img src="assets/img/slider-5.jpg" />
-            </div>
-            <div class="text">
-              <div class="small-12 medium-9 columns">
-                <h2 class="slide-title">
-                  <a href="#">Relationships Come First</a>
-                </h2>
-                <p>How Four Career Development and Workforce Readiness Programs Prepare Young People for Work and Life.</p>
-              </div>
-              <div class="small-12 medium-3 columns">
-                <a href="#" class="button radius small">Learn More <i class="fa fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="image">
-              <img src="assets/img/slider-1.jpg" />
-            </div>
-            <div class="text row">
-              <div class="small-12 medium-9 columns">
-                <h2 class="slide-title">
-                  <a href="#">Recommit to Kids | The Summit for America's Future</a>
-                </h2>
-                <!--<p>New Center for Promise research taps into young people’s perspectives on the biggest barriers to wellness in their communities.</p>-->
-              </div>
-              <div class="small-12 medium-3 columns">
-                <a href="#" class="button radius small">Learn More <i class="fa fa-arrow-right"></i></a>
+              <div class="card-content">
+                <h6 class="subheader"><a href="#">Emancipation: One Young Man Leaves Foster Care On His Own Terms</a></h6>
+                <p>created: January 1, 2017</p>
               </div>
             </div>
           </li>
         </ul>
+        <hr />
       </div>
-    </div>
-  </div>
+      <div class="search-form--search-results">
+        <p class="bold-paragraph">All content</p>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Caring Adults</a></h5>
+          <p><strong>Caring</strong> adults are the centerpieces of children’s development. They serve as ... Parents come first. But children and youth also need other <strong>caring</strong> adults in all aspects of their lives: in their schools, neighborhoods, ...</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">Promise</a></p>
+            <p>created: February 18, 2016</p>
+          </div>
+        </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Schenectady, New York</a></h5>
+          <p>… take a deep dive into key issues affecting youth, and bring <strong>caring</strong> adults and youths to the table to better understand … take to improve youth outcomes and increase the number of <strong>caring</strong> adults in their lives. The Summit culminates in … by the cast of Cradle “SchenecTED” Talks:  <strong>Caring</strong> Adults, Safe Places & Opportunities to Help Others …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">Event</a></p>
+            <p>created: July 23, 2016</p>
+          </div>
+        </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">At South Carolina Summit, Caring Adults Commit to Leaving No Young Person Behind</a></h5>
+          <p>… and financial operations, computers and mathematics. <strong>Caring</strong> Adults as Warriors, First Responders Fortunately, the … many speakers said, is not a program but a person: a <strong>caring</strong> adult. Dr. Joe Hendershott from Hope 4 The Wounded compared <strong>caring</strong> adults to warriors. Just as a good soldier never …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">News</a></p>
+            <p>created: October 20, 2016</p>
+            <p class="inline-list">
+              tags:
+              <a href="#">Mentoring</a>,
+              <a href="#">Youth Involvement</a>,
+              <a href="#">Health & Wellness</a>...
+            </p>
+          </div>
+        </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Erie GradNation Community Summit challenges attendees to be Caring Adults</a></h5>
+          <p>… the summit and highlighting the key theme of needing more <strong>caring</strong> adults within the community. The summit served as a … Gowns Project’s goal is to promote the involvement of <strong>caring</strong> adults in children’s lives and educational success. … models to the youth. Discussions about how youth can find <strong>caring</strong> adults and what it takes to be a caring adult also led …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">Summit</a></p>
+            <p>created: December 17, 2015</p>
+            <p>tags: <a href="#">Effective Education</a>, <a href="#">Opportunities to Help Others</a></p>
+          </div>
+        </div>
   
-  <!-- ReCommit Banner -->
-  <div class="recommit-banner row-style">
-    <div class="row">
-      <div class="small-4 small-offset-4 medium-3 medium-offset-0 columns">
-        <img src="assets/img/anniversary/anniversary-logo.png" />
-      </div>
-      <div class="small-12 medium-9 columns">
-        <p class="lead">Throughout 2017 America’s Promise is honoring its past and planning for the future - join this effort to recommit our time, energy & skills so that every child is prepared to pursue their American dream #Recommit2Kids</p>
-        <a href="#" class="right button secondary small radius">Join Us</a>
-      </div>
-    </div>
-  </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">At South Carolina Summit, Caring Adults Commit to Leaving No Young Person Behind</a></h5>
+          <p>… and financial operations, computers and mathematics. <strong>Caring</strong> Adults as Warriors, First Responders Fortunately, the … many speakers said, is not a program but a person: a <strong>caring</strong> adult. Dr. Joe Hendershott from Hope 4 The Wounded compared <strong>caring</strong> adults to warriors. Just as a good soldier never …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">News</a></p>
+            <p>created: October 20, 2016</p>
+            <p class="inline-list">
+              tags:
+              <a href="#">Mentoring</a>,
+              <a href="#">Youth Involvement</a>,
+              <a href="#">Health & Wellness</a>...
+            </p>
+          </div>
+        </div>
   
-  <!-- 5 PROMISES -->
-  <div class="five-promises-slider">
-    <!-- Attachment before -->
-    <div class="attachment-before row show-for-medium-up">
-      <div class="view-promises-slider-nav">
-        <ul>
-          <li class="views-row views-row-1">
-            <div class="field-title">
-              <a href="/promise/caring-adults">Caring Adults</a>
-            </div>
-          </li>
-          <li class="views-row views-row-2">
-            <div class="field-title">
-              <a href="/promise/caring-adults">Safe Places</a>
-            </div>
-          </li>
-          <li class="views-row views-row-3">
-            <div class="field-title">
-              <a href="/promise/caring-adults">A Healthy Start</a>
-            </div>
-          </li>
-          <li class="views-row views-row-4">
-            <div class="field-title">
-              <a href="/promise/caring-adults">Effective Education</a>
-            </div>
-          </li>
-          <li class="views-row views-row-5">
-            <div class="field-title">
-              <a href="/promise/caring-adults">Opportunities to Help Others</a>
-            </div>
-          </li>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Funding Opportunities</a></h5>
+          <p>… not a regular ALA/AASL member. Deadline: February 1, 2012 <strong>Caring</strong> Institute: 2012 <strong>Caring</strong> Awards The <strong>Caring</strong> Institute is now accepting nominations for its annual …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">News</a></p>
+            <p>created: January 26, 2016</p>
+            <p>tags: <a href="#">Mentoring</a></p>
+            <p><a href="#">Caring Adults</a></p>
+          </div>
+        </div>
+  
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Caring Adults</a></h5>
+          <p><strong>Caring</strong> adults are the centerpieces of children’s development. They serve as ... Parents come first. But children and youth also need other <strong>caring</strong> adults in all aspects of their lives: in their schools, neighborhoods, ...</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">Promise</a></p>
+            <p>created: February 18, 2016</p>
+          </div>
+        </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Schenectady, New York</a></h5>
+          <p>… take a deep dive into key issues affecting youth, and bring <strong>caring</strong> adults and youths to the table to better understand … take to improve youth outcomes and increase the number of <strong>caring</strong> adults in their lives. The Summit culminates in … by the cast of Cradle “SchenecTED” Talks:  <strong>Caring</strong> Adults, Safe Places & Opportunities to Help Others …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">Event</a></p>
+            <p>created: July 23, 2016</p>
+          </div>
+        </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">At South Carolina Summit, Caring Adults Commit to Leaving No Young Person Behind</a></h5>
+          <p>… and financial operations, computers and mathematics. <strong>Caring</strong> Adults as Warriors, First Responders Fortunately, the … many speakers said, is not a program but a person: a <strong>caring</strong> adult. Dr. Joe Hendershott from Hope 4 The Wounded compared <strong>caring</strong> adults to warriors. Just as a good soldier never …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">News</a></p>
+            <p>created: October 20, 2016</p>
+            <p class="inline-list">
+              tags:
+              <a href="#">Mentoring</a>,
+              <a href="#">Youth Involvement</a>,
+              <a href="#">Health & Wellness</a>...
+            </p>
+          </div>
+        </div>
+        <div class="search-form--search-results--item">
+          <h5 class="subheader"><a href="#">Erie GradNation Community Summit challenges attendees to be Caring Adults</a></h5>
+          <p>… the summit and highlighting the key theme of needing more <strong>caring</strong> adults within the community. The summit served as a … Gowns Project’s goal is to promote the involvement of <strong>caring</strong> adults in children’s lives and educational success. … models to the youth. Discussions about how youth can find <strong>caring</strong> adults and what it takes to be a caring adult also led …</p>
+          <div class="search-form--search-results--item-details">
+            <p>type: <a href="#">Summit</a></p>
+            <p>created: December 17, 2015</p>
+            <p>tags: <a href="#">Effective Education</a>, <a href="#">Opportunities to Help Others</a></p>
+          </div>
+        </div>
+      </div>
+      <nav class="pager">
+        <ul class="pagination">
+          <li class="arrow unavailable"><a href="">&laquo;</a></li>
+          <li class="current"><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li class="unavailable"><a href="">&hellip;</a></li>
+          <li><a href="">12</a></li>
+          <li><a href="">13</a></li>
+          <li class="arrow"><a href="">&raquo;</a></li>
         </ul>
-      </div>
-      <!--<div class="view-footer">-->
-        <!--<img src="assets/img/kid.png" class="show-for-large-up" />-->
-      <!--</div>-->
-    </div>
-    <!-- Slides -->
-    <ul class="slides">
-      <li class="slide-1" data-promise-color="#f1a109">
-        <div class="row">
-          <div class="small-10 small-centered large-5 large-offset-7 columns">
-            <p class="five-promises-slider--number">Promise No. 1</p>
-            <h3>Caring Adults</h3>
-            <p class="serif">Caring adults are the centerpieces of children’s development. They serve as guides, caretakers, and advisers, who give positive and productive guidance throughout their development.</p>
-            <a href="#" class="button radius small">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li class="slide-2" data-promise-color="#ff2f00">
-        <div class="row">
-          <div class="small-10 small-centered large-5 large-offset-7 columns">
-            <p class="five-promises-slider--number">Promise No. 2</p>
-            <h3>Safe Places</h3>
-            <p class="serif">To develop intellectually and emotionally, young people need physical and psychological safety at home, at school and in the community.   Without such “safe places” – environments that support and encourage inquiry, exploration, and play without fear of harm – children aren’t able to get support, form positive relationships and concentrate on school.</p>
-            <a href="#" class="button radius small">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li class="slide-3" data-promise-color="#85af08">
-        <div class="row">
-          <div class="small-10 small-centered large-5 large-offset-7 columns">
-            <p class="five-promises-slider--number">Promise No. 3</p>
-            <h3>A Healthy Start</h3>
-            <p class="serif">Children grow and learn better when they are born healthy and practice healthy habits throughout childhood, including proper nutrition and exercise, and have access to high quality learning opportunities. Healthy and well-nourished children are more able to develop their minds and bodies as they should, and they are far more capable of concentrating, learning and thriving throughout their school years.</p>
-            <a href="#" class="button radius small">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li class="slide-4" data-promise-color="#1dafb7">
-        <div class="row">
-          <div class="small-10 small-centered large-5 large-offset-7 columns">
-            <p class="five-promises-slider--number">Promise No. 4</p>
-            <h3>Effective Education</h3>
-            <p class="serif">Our increasingly knowledge-driven world demands people who have the education and skills to thrive in a competitive marketplace, and to understand the increasingly complex world in which they live.  That means that in order to compete and succeed, all young people will need an effective education that prepares them for work and life.</p>
-            <a href="#" class="button radius small">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li class="slide-5" data-promise-color="#a23daf">
-        <div class="row">
-          <div class="small-10 small-centered large-5 large-offset-7 columns">
-            <p class="five-promises-slider--number">Promise No. 5</p>
-            <h3>Opportunities to Help Others</h3>
-            <p class="serif">Through service to others and community, young Americans develop the character and competence they need to be helpful, hopeful and civically engaged all their lives, regardless of their own life circumstances.  The chance to give back teaches young people the value of service to others, the meaning of community, and the self-respect that comes from knowing that one has a contribution to make in the world. </p>
-            <a href="#" class="button radius small">Learn More</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  
-    <div class="attachment-after row">
-      <div class="hide-for-large-up">
-        <img src="assets/img/kid-sm.png" />
-      </div>
-    </div>
-  </div>
-  <!-- End .five-promises-slider -->
-  
-  <!-- SOLUTION FORM -->
-  <div class="solution-form color-section color-section--light-gray">
-    <div class="row">
-      <div class="small-12 large-7 columns show-for-large-up solution-form--image">
-        <img class="show-for-large-up" src="assets/img/kid.png" />
-      </div>
-      <div class="small-12 large-5 large-offset-1 columns">
-        <h5 class="subheader">Be Part of the Solution</h5>
-        <p class="serif">Fulfilling the Five Promises to youth is America's responsibility, and we need you to join the effort. Young Americans need everyone - starting with you - to help them achieve their full potential.</p>
-        <h6 class="subheader">Find a Place to Volunteer</h6>
-        <form>
-          <div class="form-item">
-            <label>Keyword(s):</label>
-            <input type="text" />
-          </div>
-          <div class="form-item">
-            <label>Location:</label>
-            <input type="text" />
-          </div>
-          <div class="form-item">
-            <button type="submit" class="button radius small">Search</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- end .solution-form -->
-  
-  <!-- GradNation Section -->
-  <div class="gradnation-section row-style">
-    <div class="row">
-      <div class="small-12 medium-7 large-6 columns">
-        <img class="gradnation-section--logo" src="assets/img/gradnation-logo.png" />
-        <p class="lead">The GradNation campaign provides those working to increase high school graduation rates with data, best practices and opportunities to connect & learn from one another.</p>
-        <a href="#" class="button radius small">Find Statistics and Events for Each State</a>
-      </div>
-      <div class="small-11 small-centered medium-uncentered medium-5 large-6 columns gradnation-section--stats">
-        <p class="stat-large">82.3%</p>
-        <p class="stat-description">National Graduation Rate for the Class of 2014</p>
-      </div>
-      <div class="small-11 small-centered medium-uncentered medium-4 large-6 columns gradnation-section--map">
-        <img class="gradnation-section--map-placeholder" src="assets/img/map-placeholder.png" />
-        <p class="small"><small>(For placement only)</small></p>
-      </div>
-    </div>
-  </div>
-  <!-- End .gradnation-section -->
-  
-  <!-- Recent News -->
-  <div class="recent-news row-style">
-    <div class="row">
-      <div class="small-12 medium-6 large-7 columns">
-        <div class="row collapse medium-uncollapse">
-          <h3 class="block-title small-12 columns">Recent news</h3>
-        </div>
-        <div class="recent-news--view">
-          <div class="row collapse medium-uncollapse">
-            <div class="small-12 large-4 columns">
-              <img data-interchange="[https://unsplash.it/735/375?image=1083, (default)], [https://unsplash.it/500/?image=1083, (large)]" />
-            </div>
-            <div class="small-12 large-8 columns">
-              <p class="post-date p-small">February 17, 2017</p>
-              <h6 class="strong-title subheader">America's Promise #PromiseChat: Providing an #EffectiveEdu for Youth Through Technology</h6>
-              <p class="p-small">Join America’s Promise Alliance, Center for Promise, Afterschool Alliance, and Ben Herold of Education Week on February 23 at 3-4 PM ET for an interactive Twitter chat on providing an #EffectiveEdu for youth through technology.</p>
-            </div>
-          </div>
-          <div class="row collapse medium-uncollapse">
-            <div class="small-12 large-4 columns">
-              <img data-interchange="[https://unsplash.it/735/375?image=1084, (default)], [https://unsplash.it/500/?image=1084, (large)]" />
-            </div>
-            <div class="small-12 large-8 columns">
-              <p class="post-date p-small">February 16, 2017</p>
-              <h6 class="strong-title subheader">America’s Promise Alliance Welcomes Solutions for Progress</h6>
-              <p class="p-small">America’s Promise is excited to announce that Solutions for Progress has joined America’s Promise Alliance as a national partner.</p>
-            </div>
-          </div>
-          <div class="row collapse medium-uncollapse">
-            <div class="small-12 large-4 columns">
-              <img data-interchange="[https://unsplash.it/735/375?image=1082, (default)], [https://unsplash.it/500/?image=1083, (large)]" />
-            </div>
-            <div class="small-12 large-8 columns">
-              <p class="post-date p-small">February 09, 2017</p>
-              <h6 class="strong-title subheader">5 Myths about What it Takes to Make it To and Through College</h6>
-              <p class="p-small">In coming weeks, high school seniors hoping to join the ranks of the Class of 2021 in colleges and universities across the country will receive the admissions decisions that will chart the course.</p>
-            </div>
-          </div>
-          <div class="footer more-link">
-            <a href="#">Visit the News & Opinion section for news, opinion pieces from thought leaders, America's Promise media mentions and more <i class="fa fa-chevron-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="small-12 medium-6 large-5 columns recent-news--twitter">
-        <div class="row collapse medium-uncollapse">
-          <h3 class="block-title small-12 columns">From Twitter</h3>
-        </div>
-        <div class="row collapse medium-uncollapse recent-news--twitter-items">
-          <div class="small-12 columns">
-            <!-- Twitter status -->
-            <div class="twitter-status">
-              <div>
-                <div class="twitter-status--user">
-                  <img src="http://pbs.twimg.com/profile_images/649253522177982465/3KF2JDeB_normal.jpg">
-                  <div class="twitter-status--user--name-wrapper">
-                    <a class="twitter-status--user--name" target="_blank" href="http://twitter.com/WorkforceInvest">NAWB</a>
-                    <a class="twitter-status--user--handle" target="_blank" href="http://twitter.com/WorkforceInvest">@WorkforceInvest</a>
-                    <span class="twitter-status--date">02/22/2017 at 3:05pm</span>
-                  </div>
-                </div>
-                <div class="twitter-status--text">
-                  RT <a href="#">@AmericasPromise</a>: Number Of Hungry &amp; Homeless Students Rises Along With College Costs via <a href="https://twitter.com/npr_ed">@npr_ed</a> <a href="https://t.co/zbt63DRx9b">https://t.co/zbt63DRx9b</a> <a href="https://twitter.com/hashtag/UnseenStudents">#UnseenStudents</a>
-                </div>
-                <div class="twitter-status--intents">
-                  <a class="external-new-window" href="#"><i class="fa fa-reply"></i> Reply</a>
-                  <a class="external-new-window" href="#"><i class="fa fa-retweet"></i> Retweet</a>
-                  <a class="external-new-window" href="#"><i class="fa fa-star-o"></i> Favorite</a>
-                </div>
-              </div>
-            </div>
-            <!-- End Twitter status -->
-            <!-- Twitter status -->
-            <div class="twitter-status">
-              <div>
-                <div class="twitter-status--user">
-                  <img src="http://pbs.twimg.com/profile_images/649253522177982465/3KF2JDeB_normal.jpg">
-                  <div class="twitter-status--user--name-wrapper">
-                    <a class="twitter-status--user--name" target="_blank" href="http://twitter.com/WorkforceInvest">NAWB</a>
-                    <a class="twitter-status--user--handle" target="_blank" href="http://twitter.com/WorkforceInvest">@WorkforceInvest</a>
-                    <span class="twitter-status--date">02/22/2017 at 3:05pm</span>
-                  </div>
-                </div>
-                <div class="twitter-status--text">
-                  RT <a href="#">@AmericasPromise</a>: Number Of Hungry &amp; Homeless Students Rises Along With College Costs via <a href="https://twitter.com/npr_ed">@npr_ed</a> <a href="https://t.co/zbt63DRx9b">https://t.co/zbt63DRx9b</a> <a href="https://twitter.com/hashtag/UnseenStudents">#UnseenStudents</a>
-                </div>
-                <div class="twitter-status--intents">
-                  <a class="external-new-window" href="#"><i class="fa fa-reply"></i> Reply</a>
-                  <a class="external-new-window" href="#"><i class="fa fa-retweet"></i> Retweet</a>
-                  <a class="external-new-window" href="#"><i class="fa fa-star-o"></i> Favorite</a>
-                </div>
-              </div>
-            </div>
-            <!-- End Twitter status -->
-            <!-- Twitter status -->
-            <div class="twitter-status">
-              <div>
-                <div class="twitter-status--user">
-                  <img src="http://pbs.twimg.com/profile_images/649253522177982465/3KF2JDeB_normal.jpg">
-                  <div class="twitter-status--user--name-wrapper">
-                    <a class="twitter-status--user--name" target="_blank" href="http://twitter.com/WorkforceInvest">NAWB</a>
-                    <a class="twitter-status--user--handle" target="_blank" href="http://twitter.com/WorkforceInvest">@WorkforceInvest</a>
-                    <span class="twitter-status--date">02/22/2017 at 3:05pm</span>
-                  </div>
-                </div>
-                <div class="twitter-status--text">
-                  RT <a href="#">@AmericasPromise</a>: Number Of Hungry &amp; Homeless Students Rises Along With College Costs via <a href="https://twitter.com/npr_ed">@npr_ed</a> <a href="https://t.co/zbt63DRx9b">https://t.co/zbt63DRx9b</a> <a href="https://twitter.com/hashtag/UnseenStudents">#UnseenStudents</a>
-                </div>
-                <div class="twitter-status--intents">
-                  <a class="external-new-window" href="#"><i class="fa fa-reply"></i> Reply</a>
-                  <a class="external-new-window" href="#"><i class="fa fa-retweet"></i> Retweet</a>
-                  <a class="external-new-window" href="#"><i class="fa fa-star-o"></i> Favorite</a>
-                </div>
-              </div>
-            </div>
-            <!-- End Twitter status -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row-style gray-border signup-form">
-    <div class="row">
-      <div class="large-8 large-offset-2 columns medium-10 medium-offset-1 small-12">
-        <h4 class="subheader text-center">What's working to make the promise of America real for every child?</h4>
-        <p class="lead text-center">The bi-weekly Bulletin features articles, research and data to help you save time and stay in the know.</p>
-      </div>
-      <div class="small-12 medium-10 large-8 columns medium-centered">
-        <div class="signup-form--form">
-          <input type="email" placeholder="Please enter your email address" />
-          <a href="#" class="button secondary radius small">Get the Newsletter</a>
-        </div>
-      </div>
+      </nav>
     </div>
   </div>
 
@@ -917,7 +759,7 @@
   </footer>
   </div>
 </section>
-<script src="assets/js/app.js"></script>
+<script src="../assets/js/app.js"></script>
 </body>
 </html>
 

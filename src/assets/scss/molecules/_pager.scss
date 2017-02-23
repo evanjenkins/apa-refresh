@@ -1,0 +1,53 @@
+/////////////////////////////////
+// Pager (no copy)
+/////////////////////////////////
+
+nav.pager {
+  margin-top: rem-calc(40);
+  text-align: center;
+
+  .flex-row & {
+    flex: 0 0 100%;
+
+    @media #{$small-only} {
+      padding: rem-calc(0 30);
+    }
+  }
+}
+
+.pagination {
+  margin-left: 0;
+
+  .pager__item--last,
+  .pager__item--next,
+  .pager__item--previous,
+  .pager__item--first {
+    font-size: rem-calc(24);
+  }
+
+  .unavailable.pager__item {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+    font-size: $font-size-medium;
+    margin: rem-calc(0 6);
+    padding: 0;
+
+    @media #{$medium-up} {
+      margin: rem-calc(0 10);
+    }
+
+    a {
+      color: $body-font-color;
+    }
+
+    &.is-active {
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}

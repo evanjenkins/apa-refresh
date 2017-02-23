@@ -1,0 +1,12 @@
+////////////////////
+// Cards
+///////////////////
+
+.card {
+  border: 1px solid $silver;
+
+  .card-content {
+    padding: $column-gutter;
+  }
+
+}
