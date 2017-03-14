@@ -3,23 +3,26 @@
 //////////////////////////
 
 .gradnation-section {
-  text-align: center;
-  
-  @media #{$medium-up} {
-    text-align: left;
+
+  .gradnation-section--text {
+    text-align: center;
   }
 
-  > .row {
-    border-bottom: 1px solid $silver;
+  .gradnation-section--map-wrapper {
+    text-align: center;
+
+    @media #{$medium-up} {
+      text-align: left;
+    }
+
+    h2 {
+      color: $secondary-color;
+      text-transform: uppercase;
+    }
   }
 
   .stat-description {
     font-size: rem-calc(20);
-
-    @media #{$large-up} {
-      display: inline-block;
-      padding-left: rem-calc(20);
-    }
   }
 
   .stat-large {
@@ -35,7 +38,7 @@
     font-weight: 200;
 
     @media #{$large-up} {
-      font-size: rem-calc(26);
+      font-size: rem-calc(20);
     }
   }
 }

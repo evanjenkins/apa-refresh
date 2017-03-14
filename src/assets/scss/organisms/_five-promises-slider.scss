@@ -8,36 +8,38 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
 .five-promises-slider {
   position: relative;
 
+  &:before {
+    background: $dark-gray url(../img/5-promises-logo-white-large.png) no-repeat center;
+    content: "";
+    display: block;
+    height: rem-calc(45);
+    width: 100%;
+  }
+
   .slides {
+    display: flex;
     overflow: hidden;
 
     > li {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       padding-bottom: rem-calc(200);
       padding-top: rem-calc(40);
 
       @media #{$medium-up} {
         padding-bottom: rem-calc(250);
-        padding-top: rem-calc(40);
+        padding-top: rem-calc(150);
       }
 
       @media #{$large-up} {
-        padding-bottom: rem-calc(40);
-        padding-top: rem-calc(40);
+        padding-bottom: rem-calc(80);
+        padding-top: rem-calc(80);
       }
+    }
 
-      .small-10:before {
-        background: transparent url(../img/5-promises-logo-white-large.png) no-repeat;
-        content: '';
-        display: block;
-        height: rem-calc(50);
-        margin-bottom: rem-calc(20);
-        width: rem-calc(170);
-        z-index: 3;
-
-        @media #{$medium-only} {
-          margin-bottom: rem-calc(120);
-        }
-      }
+    .button {
+      margin-bottom: 0;
     }
   }
 
@@ -51,7 +53,7 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
       z-index: 3;
 
       @media #{$medium-up} {
-        top: rem-calc(100);
+        top: rem-calc(75);
         display: flex;
         max-width: $row-width;
         padding-left: rem-calc(45);
@@ -61,7 +63,7 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
 
       @media #{$large-up} {
         display: block;
-        top: rem-calc(25);
+        top: rem-calc(85);
         margin: 0;
         max-width: rem-calc(575);
         padding-left: 0;
@@ -74,10 +76,11 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
 
     li {
       display: inline-block;
-      vertical-align: middle;
-      zoom: 1;
-      width: 19%;
+      padding: 0;
       position: relative;
+      vertical-align: middle;
+      width: 19%;
+      zoom: 1;
 
       a {
         color: rgba(255, 255, 255, 0.4);
@@ -253,6 +256,7 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
     transform: translateX(-50%);
     position: absolute;
     width: 75%;
+    z-index: 3;
 
     @media #{$medium-up} {
       width: 50%;
@@ -301,17 +305,9 @@ $promise-map: ('1': $promise-adults, '2': $promise-places, '3': $promise-start, 
   a.flex-next,
   a.flex-prev {
     opacity: 1;
-    top: rem-calc(135);
+    top: rem-calc(120);
 
     @media #{$large-up} {
-      bottom: rem-calc(40);
-      right: rem-calc(30);
-      top: auto;
-    }
-  }
-
-  @media #{$large-up} {
-    a.flex-prev {
       display: none;
     }
   }

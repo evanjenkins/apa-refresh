@@ -504,7 +504,7 @@ p.testimonial-paragraph {
 
 .more-link {
 
-  a {
+  a:not(.button) {
     color: $secondary-color;
     font-weight: 600;
   }

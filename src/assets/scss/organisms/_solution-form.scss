@@ -1,25 +1,23 @@
 .solution-form {
   border-bottom: 1px solid $gainsboro;
   background-color: $silver;
-  padding-bottom: rem-calc(30);
-  padding-top: rem-calc(20);
-
-  @media #{$medium-up} {
-    padding-top: rem-calc(40);
-  }
-
-  @media #{$large-up} {
-    padding-bottom: 0;
-  }
+  padding-bottom: rem-calc(40);
+  padding-top: rem-calc(40);
+  position: relative;
+  z-index: 2;
 
   > .row {
     position: relative;
 
     .solution-form--image {
-      left: 0;
-      bottom: 0px;
+      left: rem-calc(7);
+      bottom: rem-calc(-40);
       position: absolute;
     }
+  }
+
+  .button {
+    margin-bottom: 0;
   }
 
   h5,

@@ -2,9 +2,14 @@
 // Recent news home
 //////////////////////
 .recent-news {
+  background-color: $silver;
 
   > .row > .columns:first-child {
     margin-bottom: rem-calc(40);
+
+    @media #{$medium-up} {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -13,8 +18,16 @@
     padding-right: rem-calc(20);
   }
 
-  > .row.collapse {
+  > .row {
     margin-bottom: rem-calc(30);
+
+    &:last-child {
+      margin-bottom: 0;
+
+      .button {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -28,5 +41,9 @@
     > .row {
       padding-left: rem-calc(40);
     }
+  }
+
+  .twitter-status {
+    background: $white;
   }
 }

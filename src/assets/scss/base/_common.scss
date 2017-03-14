@@ -40,11 +40,11 @@ $flow: rem-calc(10);
 
 @mixin horizontal-flow-padding($small-sc: 30, $medium-sc: 50) {
   padding-bottom: rem-calc($small-sc);
-  padding-top: rem-calc($small-sc - 10);
+  padding-top: rem-calc($small-sc);
 
   @media #{$medium-up} {
     padding-bottom: rem-calc($medium-sc);
-    padding-top: rem-calc($medium-sc - 10);
+    padding-top: rem-calc($medium-sc);
   }
 
 }

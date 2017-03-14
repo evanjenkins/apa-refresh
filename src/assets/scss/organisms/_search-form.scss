@@ -44,7 +44,6 @@
   padding-bottom: rem-calc(20);
 
   > p {
-    font-size: rem-calc(16);
     margin-bottom: rem-calc(5);
   }
 }
@@ -66,8 +65,20 @@
     color: $monsoon;
     font-size: $accordion-navigation-font-size;
     font-weight: 600;
-    margin: rem-calc(0 18 5 0);
+    margin: rem-calc(0 5 5 0);
     padding: 0;
     text-transform: uppercase;
+
+    &:after {
+      content: "|";
+      margin-left: rem-calc(10);
+      margin-right: rem-calc(10);
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
   }
 }

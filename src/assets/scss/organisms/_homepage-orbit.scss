@@ -28,6 +28,7 @@
 
   .button {
     display: block;
+    margin-bottom: 0;
     text-transform: uppercase;
 
     @media #{$medium-up} {
