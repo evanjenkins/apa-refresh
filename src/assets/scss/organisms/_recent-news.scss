@@ -19,13 +19,22 @@
   }
 
   > .row {
-    margin-bottom: rem-calc(30);
+    margin-bottom: rem-calc(20);
+
+    @media #{$large-up} {
+      margin-bottom: rem-calc(30);
+    }
 
     &:last-child {
       margin-bottom: 0;
 
       .button {
+        display: block;
         margin-bottom: 0;
+
+        @media #{$medium-up} {
+          display: inline-block;
+        }
       }
     }
   }

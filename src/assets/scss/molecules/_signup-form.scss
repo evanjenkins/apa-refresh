@@ -4,20 +4,31 @@
 .signup-form--form {
   clear: both;
   display: flex;
+  flex-wrap: wrap;
 
   @media #{$medium-up} {
     flex-wrap: nowrap;
   }
 
   input {
-    flex: 0 0 60%;
-    max-width: 60%;
-    margin-right: rem-calc(20);
+    flex: 0 0 100%;
+    margin-bottom: rem-calc(20);
+
+    @media #{$medium-up} {
+      flex: 0 0 60%;
+      margin-bottom: 0;
+      margin-right: rem-calc(20);
+      max-width: 60%;
+    }
   }
 
   .button {
-    flex: 0 0 40%;
+    flex: 0 0 100%;
     margin-bottom: 0;
+    
+    @media #{$medium-up} {
+      flex: 0 0 40%;
+    }
   }
 }
 

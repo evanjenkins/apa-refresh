@@ -12,6 +12,23 @@
     }
   }
 
+  .small-4 {
+    margin-bottom: rem-calc(20);
+
+    @media #{$large-up} {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .recommit-banner--button-container {
+    text-align: center;
+
+    @media #{$medium-up} {
+      text-align: left;
+    }
+  }
+
   .button {
     margin-bottom: 0;
   }
