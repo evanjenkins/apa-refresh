@@ -49,19 +49,18 @@
 @import 'fonts';
 
 // Custom
-@import 'base/common';
-@import 'base/elements';
+@import 'base/*';
 
-@import 'layout/header';
-@import 'layout/footer';
+@import 'layout/*';
 
-@import 'modules/footer-address';
-@import 'modules/off-canvas';
-@import 'modules/block';
-@import 'modules/topbar';
+@import 'modules/*';
 
 @import 'atoms/*';
 
 @import 'molecules/*';
 
 @import 'organisms/*';
+
+@import 'templates/*';
+
+@import 'pages/*';

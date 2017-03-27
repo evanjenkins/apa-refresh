@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "5.5",
+    "foundation": "5.5.1",
     "fontawesome": "~4.6.2",
     "flexslider": "2.6.3",
     "foundation-sites": "~6.3.0",

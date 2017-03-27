@@ -1,0 +1,17 @@
+////////////////
+// Basic pages
+////////////////
+.field-node--field-paragraph,
+.field-name-field-body-paragraphs {
+  > .field-items {
+
+    > .field-item {
+      @extend %horizontal-flow-margin-large;
+
+      > .row + .row {
+        margin-top: rem-calc(20);
+      }
+    }
+  }
+}
+

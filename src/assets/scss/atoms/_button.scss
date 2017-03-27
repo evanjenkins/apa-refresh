@@ -4,4 +4,8 @@
 .button {
   font-weight: bold;
   text-transform: uppercase;
+
+  &.expand.small {
+    font-size: rem-calc(11);
+  }
 }

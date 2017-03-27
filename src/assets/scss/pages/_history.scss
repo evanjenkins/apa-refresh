@@ -1,0 +1,21 @@
+.history-logos {
+
+  > div {
+    margin-bottom: rem-calc(40);
+    margin-top: rem-calc(40);
+  }
+}
+
+.history--stats {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    flex: 0 0 10%;
+
+    p {
+      margin-bottom: rem-calc(10);
+      text-align: center;
+    }
+  }
+}

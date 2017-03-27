@@ -1,0 +1,209 @@
+////////////////////////////////////////////
+// Flex grid... let's get to Foundation 6
+/////////////////////////////////////////////
+
+// Small viewport side-by-side column
+// gutter fix.
+.row,
+.flex-row {
+  .columns--small-fix {
+    margin-left: -$column-gutter;
+    margin-right: -$column-gutter;
+
+    > .columns {
+      padding-left: $column-gutter;
+      padding-right: $column-gutter;
+    }
+  }
+}
+
+
+%flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  &.row {
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &.flex-space-around {
+    justify-content: space-around;
+
+    &:after {
+      display: block;
+      flex: 0 1 100%;
+    }
+  }
+
+  &.flex-space-between {
+    justify-content: space-between;
+
+    &:after {
+      display: block;
+      flex: 0 1 100%;
+    }
+  }
+
+  &.flex-baseline {
+    align-items: baseline;
+  }
+
+  > .columns {
+    float: none;
+  }
+}
+
+.flex-row {
+  @extend %flex-row;
+}
+
+.flex-overflow-hidden {
+  overflow: hidden;
+}
+
+.flex-inner {
+  display: flex;
+
+  .panel {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+
+    > .row {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.flex-align-center {
+  align-items: center;
+  display: flex;
+
+  > div {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.flex-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media #{$medium-up} {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  li {
+    flex: 0 0 20%;
+    min-width: 20%;
+
+    @media #{$medium-up} {
+      flex: 0 0 auto;
+      min-width: rem-calc(25);
+    }
+  }
+}
+
+.flex-small-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.flex-small-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.flex-small-4 {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+.flex-small-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+
+.flex-medium-2 {
+
+  @media #{$medium-up} {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.flex-medium-3 {
+
+  @media #{$medium-up} {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.flex-medium-4 {
+
+  @media #{$medium-up} {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+.flex-medium-6 {
+
+  @media #{$medium-up} {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.flex-medium-7 {
+
+  @media #{$medium-up} {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+}
+
+.flex-medium-8 {
+
+  @media #{$medium-up} {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
+
+.flex-large-3 {
+
+  @media #{$large-up} {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.flex-large-4 {
+
+  @media #{$large-up} {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+.flex-large-5 {
+
+  @media #{$large-up} {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+}
+

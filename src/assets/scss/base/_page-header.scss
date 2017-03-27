@@ -1,0 +1,117 @@
+////////////////////////
+// Page headers
+////////////////////////
+
+%paragraph--page-header {
+  background: $secondary-color;
+  padding: rem-calc(40 0 20);
+
+  @media #{$medium-up} {
+    padding: rem-calc(50 0 20);
+  }
+
+  @media #{$large-up} {
+    padding: rem-calc(88 0 20);
+  }
+
+  h1 {
+    color: $white;
+    font-size: $h1-header-font-size;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: $white;
+    font-family: $body-font-family;
+    font-size: $h2-header-font-size;
+  }
+}
+
+.paragraph--page-header {
+  @extend %paragraph--page-header;
+}
+
+.variant--taxonomy-term {
+
+  .page--top {
+
+    .entity-view {
+      @extend %paragraph--page-header;
+
+      @media #{$medium-up} {
+        padding: rem-calc(50 0 50);
+      }
+
+      @media #{$large-up} {
+        padding: rem-calc(90 0 65);
+      }
+    }
+  }
+}
+
+.page-header--bordered {
+  @extend %border-bottom;
+}
+
+.page-header--information-wrapper {
+  min-height: 0;
+
+  > picture {
+    display: block;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+picture + .page-header--information,
+img + .page-header--information {
+  margin-top: 0;
+  width: 100%;
+
+  @media #{$large-up} {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+
+.page-header--information {
+  background: $hero-header-text-color;
+  padding: rem-calc(20);
+
+  @media #{$medium-up} {
+    margin-top: rem-calc(25);
+  }
+
+  @media #{$large-up} {
+    margin-top: rem-calc(55);
+  }
+}
+
+.page-header--information-inner {
+  @include grid-row();
+  padding-left: $column-gutter / 2;
+  padding-right: $column-gutter / 2;
+
+  .article-nodes-type {
+    display: inline-block;
+    margin-right: rem-calc(5);
+  }
+}
+
+.page-subheader--information {
+  @include grid-row();
+  padding-bottom: rem-calc(10);
+  padding-left: $column-gutter * 1.5;
+  padding-right: $column-gutter * 1.5;
+  padding-top: rem-calc(20);
+
+  @media #{$medium-up} {
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
+  }
+}
+

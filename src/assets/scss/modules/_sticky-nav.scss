@@ -1,0 +1,60 @@
+///////////////////////////////////
+// Sticky nav's built with menus
+///////////////////////////////////
+
+.sticky-navigation {
+  background-color: $silver;
+
+  @media #{$small-only} {
+    padding: rem-calc(0 0 10 0);
+  }
+
+  @media #{$medium-up} {
+    padding: rem-calc(10 0);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    flex: 0 0 auto;
+    margin: rem-calc(0 10);
+
+    @media #{$small-only} {
+      margin: 0;
+    }
+
+    @media #{$medium-up} {
+      margin: 0;
+    }
+
+    a:not(.button) {
+      color: $secondary-color;
+      display: block;
+      font-size: rem-calc(14);
+      font-weight: bold;
+      padding: rem-calc(10 0);
+    }
+
+    &.active {
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .button {
+      margin-bottom: 0;
+
+      @media #{$small-only} {
+        padding: rem-calc(10);
+      }
+    }
+  }
+}

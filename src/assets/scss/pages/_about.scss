@@ -1,0 +1,76 @@
+.field-node--field-paragraph,
+.field-name-field-body-paragraphs {
+  > .field-items {
+
+    > .field-item {
+
+      &:after {
+        background-color: $silver;
+        content: '';
+        display: block;
+        height: rem-calc(1);
+        margin: 40px auto 0 auto;
+        max-width: $row-width - $column-gutter;
+      }
+    }
+  }
+}
+
+.about--five-promises {
+
+  li {
+    padding: 0;
+  }
+}
+
+.about--five-promises,
+.about--five-promises-2 {
+  list-style: none;
+  margin: 0;
+
+  li {
+    margin-bottom: rem-calc(35);
+    margin-top: rem-calc(35);
+  }
+}
+
+.magellan-scrollnav {
+  margin-top: rem-calc(40);
+  width: 25%;
+
+  [data-magellan-expedition], [data-magellan-expedition-clone] {
+    width: 250px;
+    min-width: 0;
+  }
+
+  [data-magellan-expedition-clone] {
+    display: none;
+  }
+
+  .fixed {
+    left: auto;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    background-color: $accordion-navigation-bg-color;
+    padding: 0;
+
+    a {
+      color: $accordion-navigation-font-color;
+      display: block;
+      font-size: $accordion-navigation-font-size;
+      font-weight: bold;
+      padding: $accordion-navigation-padding;
+      text-transform: uppercase;
+    }
+
+    &.active {
+      background-color: $accordion-navigation-active-bg-color;
+    }
+  }
+}
