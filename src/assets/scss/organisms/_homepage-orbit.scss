@@ -134,9 +134,21 @@
     opacity: 0.3;
   }
 
+  li {
+    position: relative;
+  }
+
   .text {
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
+
+    &.text-overlay {
+      background: rgba(255, 255, 255, 0.8);
+      bottom: 0;
+      left: rem-calc(10);
+      position: absolute;
+      width: 100%;
+    }
   }
 
   .flex-active-slide {
