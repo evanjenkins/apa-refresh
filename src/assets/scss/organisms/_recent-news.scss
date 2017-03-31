@@ -18,6 +18,10 @@
     padding-right: rem-calc(20);
   }
 
+  img {
+    margin-bottom: rem-calc(10);
+  }
+
   > .row {
     margin-bottom: rem-calc(20);
 
@@ -41,8 +45,11 @@
 }
 
 .recent-news--twitter  {
+  margin-top: rem-calc(40);
 
   @media #{$large-up} {
+    margin-top: 0;
+    
     .recent-news--twitter-items {
       border-left: 3px solid $tertiary-color;
     }
