@@ -134,14 +134,14 @@ As you've probably noticed in the examples above, you have access to a small, me
 <div class="row up-1 medium-up-3 large-up-5">
   <div class="column">
     <div class="color-block">
-      <span style="background: #2199e8"></span>
-      #2199e8
+      <span style="background: #e61212"></span>
+      #e61212
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #3adb76"></span>
-      #3adb76
+      <span style="background: #2e008b"></span>
+      #2e008b
     </div>
   </div>
   <div class="column">
@@ -152,14 +152,8 @@ As you've probably noticed in the examples above, you have access to a small, me
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ec5840"></span>
-      #ec5840
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
+      <span style="background: #484848"></span>
+      #484848
     </div>
   </div>
 </div>
@@ -208,7 +202,33 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
+---
 
+<h1 class="subheader">Sub-Heading Level 1</h1>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
+
+<h2 class="subheader">Sub-Heading Level 2</h2>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
+
+<h3 class="subheader">Sub-Heading Level 3</h3>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
+
+<h4 class="subheader">Sub-Heading Level 4</h4>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
+
+<h5 class="subheader">Sub-Heading Level 5</h5>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
+
+<h6 class="subheader">Sub-Heading Level 6</h6>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
+
+---
 
 # Buttons
 
