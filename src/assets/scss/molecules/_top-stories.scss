@@ -34,6 +34,7 @@
 
   .card {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
 
@@ -43,7 +44,7 @@
   }
 
   .card-image {
-    flex: 0 0 120px;
+    flex: 0 0 100%;
 
     @media #{$large-up} {
       flex: 0 0 100%;

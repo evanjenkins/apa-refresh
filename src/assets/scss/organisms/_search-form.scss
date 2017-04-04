@@ -12,11 +12,11 @@
   }
 
   .search-form--results {
-    border-left: 1px solid $silver;
+    //border-right: 1px solid $silver;
     margin-bottom: rem-calc(40);
 
     @media #{$large-up} {
-      padding-left: rem-calc(30);
+      padding-right: rem-calc(30);
     }
   }
 }
