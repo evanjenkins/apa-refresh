@@ -5,3 +5,10 @@
     padding-right: $column-gutter;
   }
 }
+
+.extra-padding-right {
+
+  @media #{$large-up} {
+    padding-right: rem-calc(30);
+  }
+}

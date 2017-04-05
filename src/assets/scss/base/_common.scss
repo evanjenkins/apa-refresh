@@ -157,13 +157,13 @@ body:not(.purl-provider_key-microsites) {
     }
 
     &:before {
-      //@include global-sprite(opening-quote);
+      background-image: url("../img/opening-quote.png");
       content: '';
-      //height: global-sprite-height(opening-quote);
+      height: rem-calc(43);
       left: 0;
       position: absolute;
       top: rem-calc(20);
-      //width: global-sprite-width(opening-quote);
+      width: rem-calc(52);
     }
   }
 }

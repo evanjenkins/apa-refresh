@@ -36,11 +36,42 @@
 
 .magellan-scrollnav {
   margin-top: rem-calc(40);
-  width: 25%;
+  //width: 25%;
 
   [data-magellan-expedition], [data-magellan-expedition-clone] {
-    width: 250px;
+    width: 100%;
     min-width: 0;
+
+    @media #{$large-up} {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  .has-dropdown {
+    position: relative;
+  }
+
+  .dropdown-opener {
+    cursor: pointer;
+    height: 100%;
+    padding-top: rem-calc(3);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+
+    &.opened i:before {
+      content: '\f068';
+    }
+  }
+
+  .dropdown {
+
+    li a {
+      background-color: $tertiary-color;
+      color: $white;
+    }
   }
 
   [data-magellan-expedition-clone] {
@@ -49,6 +80,15 @@
 
   .fixed {
     left: auto;
+    width: 100%;
+
+    @media #{$medium-up} {
+      width: rem-calc(172);
+    }
+
+    @media #{$large-up} {
+      width: rem-calc(280);
+    }
   }
 
   ul {
@@ -60,17 +100,34 @@
     background-color: $accordion-navigation-bg-color;
     padding: 0;
 
-    a {
+    a,
+    i {
       color: $accordion-navigation-font-color;
       display: block;
-      font-size: $accordion-navigation-font-size;
+      font-size: rem-calc(12);
       font-weight: bold;
       padding: $accordion-navigation-padding;
       text-transform: uppercase;
+
+      @media #{$large-up} {
+        font-size: $accordion-navigation-font-size;
+      }
+    }
+
+    a {
+      &:hover {
+        background-color: $accordion-navigation-active-bg-color;
+        text-decoration: none;
+      }
     }
 
     &.active {
       background-color: $accordion-navigation-active-bg-color;
     }
+
+    .dropdown {
+      display: none;
+    }
+
   }
 }

@@ -41,5 +41,11 @@ $(document).foundation({
         changeBgColor(e.animatingTo);
       }
     });
+
+    $(".dropdown-opener").on("click", function(e) {
+      e.preventDefault();
+      $(this).siblings(".dropdown").toggle();
+      $(this).toggleClass("opened")
+    });
   });
 })(jQuery);
