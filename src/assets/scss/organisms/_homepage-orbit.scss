@@ -72,6 +72,10 @@
   .slide-title {
     font-weight: 400;
 
+    @media #{$small-only} {
+      font-size: rem-calc(24);
+    }
+
     a:hover {
       color: darken($primary-color, 10%);
       text-decoration: none;
@@ -111,10 +115,10 @@
     }
 
     .homepage-orbit--overlay & {
-      top: 15%;
+      top: 30%;
 
       @media #{$medium-up} {
-        top: 35%;
+        top: 40%;
       }
 
       @media #{$large-up} {
@@ -154,7 +158,7 @@
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
 
-    @media #{$large-up} {
+    //@media #{$large-up} {
       &.text-overlay {
         background: rgba(255, 255, 255, 0.8);
         bottom: 0;
@@ -162,7 +166,7 @@
         position: absolute;
         width: 100%;
       }
-    }
+    //}
   }
 
   .flex-active-slide {
